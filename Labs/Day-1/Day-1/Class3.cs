@@ -9,7 +9,7 @@ namespace Day_1
         /// <summary>
         /// Input from user
         /// </summary>
-        public static void Main()
+        public static void Main3()
         {
             //string Name;
             //Console.WriteLine("Please enter your name");
