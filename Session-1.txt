@@ -59,3 +59,7 @@ Binary Opeators 2 Expersions
 
 4/2=>2
 4%2=>0
+
+Type Casting
+1.Implicit Type Casting
+2.Explicit Type Casting
