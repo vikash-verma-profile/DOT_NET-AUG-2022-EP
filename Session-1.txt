@@ -48,7 +48,7 @@ return-type
 
 Binary Opeators 2 Expersions
 1.Arithematic operators==>+,-,/,%
-2.Realtional operators <,<=,>,>=,==,!=
+2.Relational operators <,<=,>,>=,==,!=
 3.Logical operators &&,||,!
 4.Bitwise operators &,|,<<,>>,~,^
 5.Assignement operators =,+=,-+,*=
@@ -63,3 +63,10 @@ Binary Opeators 2 Expersions
 Type Casting
 1.Implicit Type Casting
 2.Explicit Type Casting
+
+Create a calculator by using function and switch
+ask user to enter any choice
+1.Add
+2.Multi
+3.Division
+4.Sub

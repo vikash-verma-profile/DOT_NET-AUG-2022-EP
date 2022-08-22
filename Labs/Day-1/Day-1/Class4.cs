@@ -9,7 +9,7 @@ namespace Day_1
         /// <summary>
         /// Implicit Type Casting
         /// </summary>
-        public static void Main()
+        public static void Main4()
         {
             //int num = 100;
             //Type type = num.GetType();
