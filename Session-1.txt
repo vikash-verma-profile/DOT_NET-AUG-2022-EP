@@ -1,0 +1,61 @@
+Types of applications
+
+1.Standalone/windows/system Application
+2.Web applications
+3.Mobile application
+
+Human Readable Lanaguage
+Binary Language
+
+Complier
+Interpreter
+
+Operator vs Operand
+
+1+2
++==>Operator
+1,2=>Operand
+
+Opeators 
+
+			Data-types
+
+Value Data types 	 Reference Data Types
+
+Pre Defined types 		Pre Defined types				
+int						Object
+Boolean					Strings
+Float
+Char
+
+User Defined Types     User Defined Types
+Enumeration				Class
+Structure				Interface
+
+comments
+Single line comments  //
+Multi Line comments  /*  */
+
+Functions
+
+return-type
+<Data-type>  Name-OF-FUNCTION (<parameters> )
+{
+//body of the function
+}
+
+
+
+Binary Opeators 2 Expersions
+1.Arithematic operators==>+,-,/,%
+2.Realtional operators <,<=,>,>=,==,!=
+3.Logical operators &&,||,!
+4.Bitwise operators &,|,<<,>>,~,^
+5.Assignement operators =,+=,-+,*=
+
+6.Unary operators ++,-- 1 Expersions
+7.Ternanry  operators ?: 3 Expersions
+
+
+4/2=>2
+4%2=>0
