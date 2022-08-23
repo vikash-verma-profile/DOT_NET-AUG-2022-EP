@@ -6,7 +6,7 @@ namespace Day_2
 {
     class Class3
     {
-        public static void Main()
+        public static void Main4()
         {
             int[,] matrix = new int[2,2];
 
