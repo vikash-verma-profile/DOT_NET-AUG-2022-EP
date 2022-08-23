@@ -12,8 +12,8 @@ namespace Day_2
         public static void Main()
         {
             // data-type[][] nameofarray=new data-type[rows][]
-
-            int[][] jagged_array = new int[4][];
+            int n = 4;
+            int[][] jagged_array = new int[n][];
             jagged_array[0] = new int[] { 1,2};
             jagged_array[1] = new int[] { 1,2,3,4};
             jagged_array[2] = new int[] { 1,2,3,4,5,6};
