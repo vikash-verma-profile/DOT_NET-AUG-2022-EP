@@ -6,7 +6,7 @@ namespace Day_1
 {
     class Class6
     {
-        public static void Main()
+        public static void Main6()
         {
             int choice;
             choice = 3;
