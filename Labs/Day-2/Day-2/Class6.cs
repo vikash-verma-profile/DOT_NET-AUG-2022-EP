@@ -9,10 +9,10 @@ namespace Day_2
     /// </summary>
     class Class6
     {
-        public static void Main()
+        public static void Main7()
         {
             int result=0;
-            int outresult;
+            int outresult=1;
             SumRef(1,2, ref result);
             Console.WriteLine("Sum of two numbers with ref keyword is "+result);
             SumOut(1, 2, out outresult);
@@ -20,10 +20,12 @@ namespace Day_2
         }
         static void SumRef(int a,int b,ref int result)
         {
+            int x = result;
             result = a + b;
         }
         static void SumOut(int a, int b, out int result)
         {
+            //int x = result;
             result = a + b;
         }
 
