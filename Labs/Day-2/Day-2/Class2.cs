@@ -6,7 +6,7 @@ namespace Day_2
 {
     class Class2
     {
-        public static void Main()
+        public static void Main3()
         {
             //<data-type> [] nameofvariable = new data-type[] 
             int[] values = new int[] {1,2,3,4,5 };

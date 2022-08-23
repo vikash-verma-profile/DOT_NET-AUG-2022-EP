@@ -4,3 +4,12 @@ Loops
 2.do while
 3.while
 4.for each
+
+breakpoints
+f10-for next iteration
+
+
+array types
+single dimensional array
+multi dimensional array
+jagged array
