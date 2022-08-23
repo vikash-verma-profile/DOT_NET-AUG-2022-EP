@@ -6,7 +6,7 @@ namespace Day_2
 {
     class Class1
     {
-        public static void Main()
+        public static void Main2()
         {
             bool flag = true;
             int Number1=0, Number2=0;
