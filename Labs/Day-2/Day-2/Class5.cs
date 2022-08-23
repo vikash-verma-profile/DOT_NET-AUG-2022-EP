@@ -9,10 +9,10 @@ namespace Day_2
     /// </summary>
     class Class5
     {
-        public static void Main()
+        public static void Main6()
         {
             //var i = 1.6767;
-            //i = "vikash";
+            ////i = "vikash";
             //Type type = i.GetType();
             //Console.WriteLine(i);
             //Console.WriteLine(type);
