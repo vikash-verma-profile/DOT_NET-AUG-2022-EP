@@ -9,7 +9,7 @@ namespace Day_2
         /// <summary>
         /// Jagged array
         /// </summary>
-        public static void Main()
+        public static void Main5()
         {
             // data-type[][] nameofarray=new data-type[rows][]
             int n = 4;
