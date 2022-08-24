@@ -9,7 +9,7 @@ namespace Day_3
         /// <summary>
         /// parse int
         /// </summary>
-        public static void Main()
+        public static void Main6()
         {
             int number = int.Parse("23");
             Console.WriteLine(number);

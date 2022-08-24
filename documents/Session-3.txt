@@ -11,3 +11,18 @@ MADAM==>MADAM
 Vikash=>HSAKIV
 
 Create a program to check wether a string a palindrome or not
+
+create a program to check weather a input is numeric or not
+
+Parse vs tryparse and convert
+
+
+OOPS pillers
+
+1.Abstraction ==>hiding complex part and only showing essential 
+				details to the user
+2.Encapsulation==> wrapping up of data 
+3.Inheritance==>
+4.Polymorphism==>
+
+class
