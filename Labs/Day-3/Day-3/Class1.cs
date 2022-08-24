@@ -6,6 +6,10 @@ namespace Day_3
 {
     class Class1
     {
+        /// <summary>
+        /// String vs StringBuilder
+        /// </summary>
+        /// <param name="args"></param>
         static void Main(string[] args)
         {
 
@@ -30,6 +34,19 @@ namespace Day_3
             string rev = new String(revr);
 
             Console.WriteLine((rev == palindrome) ? "Palidrome" : "Not a Palndrome");
+
+            string k = "Vikash";
+            k = "car";
+
+            Console.WriteLine("=====================");
+            StringBuilder obj = new StringBuilder();
+            StringBuilder obj1 = new StringBuilder("Vikash Verma");
+            obj.Append("Vikash");
+            obj.Append("Raj");
+            obj1.Clear();
+            obj1.Append("Kumar");
+            Console.WriteLine(obj1);
+
         }
     }
 }
