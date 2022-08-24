@@ -11,7 +11,7 @@ namespace Day_3
         /// Check maximum  characters in a string
         /// </summary>
         /// <param name="args"></param>
-        static void Main(string[] args)
+        static void Main5(string[] args)
         {
 
             string s = "aaabbcddfghh";
