@@ -16,26 +16,35 @@ namespace Day_3
     {
         //fields are member variables
         //by default all member of a class are internal 
-        public int rollno;
-        public string name;
-        public string gender;
+        int rollno;
+        string name;
+        string gender;
+
+        public void getData()
+        {
+            Console.WriteLine("Please enter student rollno");
+            rollno = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Please enter student name");
+            name = Console.ReadLine();
+            Console.WriteLine("Please enter student gender");
+            gender = Console.ReadLine();
+        }
+        public void showData()
+        {
+            Console.WriteLine("============Student Details============");
+            Console.WriteLine(rollno);
+            Console.WriteLine(name);
+            Console.WriteLine(gender);
+        }
     }
     class Class6
     {
         public static void Main()
         {
             Student student = new Student();
-
-            Console.WriteLine("Please enter student rollno");
-            student.rollno = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Please enter student name");
-            student.name = Console.ReadLine();
-            Console.WriteLine("Please enter student gender");
-            student.gender = Console.ReadLine();
-            Console.WriteLine("============Student Details============");
-            Console.WriteLine(student.rollno);
-            Console.WriteLine(student.name);
-            Console.WriteLine(student.gender);
+            student.getData();
+            student.showData();
+          
         }
     }
 }
