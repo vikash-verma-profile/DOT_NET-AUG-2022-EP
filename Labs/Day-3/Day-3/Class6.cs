@@ -20,6 +20,28 @@ namespace Day_3
         string name;
         string gender;
 
+        //it should have name same as class
+        //it cannot have any return-type
+        //we can have parameters and access modifiers
+
+        //Default Constructor
+        //Parameterized Constructor
+
+        //Copy Constructor
+        //Private Constructor
+        //Static Constructor
+        public Student(int _rollno,string _name,string _gender)
+        {
+            rollno = _rollno;
+            name = _name;
+            gender = _gender;
+        }
+
+        //Destructor
+        ~Student()
+        {
+
+        }
         public void getData()
         {
             Console.WriteLine("Please enter student rollno");
@@ -39,10 +61,10 @@ namespace Day_3
     }
     class Class6
     {
-        public static void Main()
+        public static void Main7()
         {
-            Student student = new Student();
-            student.getData();
+            Student student = new Student(101,"Vikash Verma","Male");
+            //student.getData();
             student.showData();
           
         }
