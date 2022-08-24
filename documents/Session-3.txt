@@ -1,0 +1,13 @@
+Null
+
+value type variables
+
+Nullable type are based on refence type 
+so we cannot create a nullable based on reference type
+
+Palindrome string
+DAD ==>DAD
+MADAM==>MADAM
+Vikash=>HSAKIV
+
+Create a program to check wether a string a palindrome or not
