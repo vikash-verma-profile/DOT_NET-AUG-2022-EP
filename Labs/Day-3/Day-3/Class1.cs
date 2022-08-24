@@ -10,7 +10,7 @@ namespace Day_3
         /// String vs StringBuilder
         /// </summary>
         /// <param name="args"></param>
-        static void Main(string[] args)
+        static void Main2(string[] args)
         {
 
             String s = "Vikash Verma";
