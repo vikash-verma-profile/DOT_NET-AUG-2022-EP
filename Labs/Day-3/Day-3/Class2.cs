@@ -13,7 +13,7 @@ namespace Day_3
         /// 3.Default parameter
         /// </summary>
         /// <param name="args"></param>
-        static void Main(string[] args)
+        static void Main3(string[] args)
         {
             sum(10,30);
             Console.WriteLine("======================");
