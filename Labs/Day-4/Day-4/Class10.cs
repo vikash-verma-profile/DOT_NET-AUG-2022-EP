@@ -24,12 +24,14 @@ namespace Day_4
     }
     class Class10
     {
-        public static void Main()
+        public static void Main11()
         {
             Caluclator c1 = new Caluclator(5);
             Caluclator c2 = new Caluclator(10);
-            Caluclator c3 = c1 + c2;
-            c3.print();
+             Caluclator c3 = c1 + c2;
+            //int number1,number2;
+            //int sum = number1 + number2;
+            //c3.print();
         }
     }
 }
