@@ -34,7 +34,7 @@ namespace Day_4
     }
     class Class2
     {
-        public static void Main()
+        public static void Main3()
         {
             Console.WriteLine("Value of a in main :"+Sample.a);
             Sample.Print();

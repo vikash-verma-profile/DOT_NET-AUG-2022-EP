@@ -17,3 +17,11 @@ variables
 Method
 Constructor
 
+
+Inheitance???
+1.Single Inheitance
+2.Mutilevel Inheitance
+3.Multiple Inheitance
+4.Hybrid
+5.Hierarchical 
+
