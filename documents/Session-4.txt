@@ -1,0 +1,19 @@
+Local,Instance and static variables
+
+Local variables are defined within a block or method or constructor is called
+local variables
+
+Instance Variable
+
+These are declared in a class 
+These variables are created when an object of the class is created
+and destroyed
+
+Static Variable
+
+STatic keyword 
+class
+variables
+Method
+Constructor
+
