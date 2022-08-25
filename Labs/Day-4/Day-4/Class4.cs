@@ -45,7 +45,7 @@ namespace Day_4
         /// <summary>
         /// Single Inheritance
         /// </summary>
-        public static void Main()
+        public static void Main5()
         {
             Car c = new Car();
             c.GetCarDetails();
