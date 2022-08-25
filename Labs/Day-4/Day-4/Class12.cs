@@ -34,7 +34,7 @@ namespace Day_4
     }
     class Class12
     {
-        public static void Main()
+        public static void Main13()
         {
             SampleB b = new SampleB();
             b.show();//1.Derived class

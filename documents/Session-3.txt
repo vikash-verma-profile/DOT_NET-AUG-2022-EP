@@ -34,4 +34,11 @@ Run time Polymorphism
 overriding
 Access-modifiers
 
+internal
+private
+protected
+public
+protected internal
+private protected
+
 class
