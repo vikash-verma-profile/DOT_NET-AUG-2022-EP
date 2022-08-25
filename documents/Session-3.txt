@@ -25,4 +25,12 @@ OOPS pillers
 3.Inheritance==>
 4.Polymorphism==>
 
+compile time Polymorphism
+overloading
+function overloading
+operator overloading
+
+Run time Polymorphism
+overriding
+
 class

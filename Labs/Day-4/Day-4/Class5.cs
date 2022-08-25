@@ -26,7 +26,7 @@ namespace Day_4
     class Class5
     {
 
-        public static void Main()
+        public static void Main6()
         {
             //C a = new C();
             //a.Discount();
