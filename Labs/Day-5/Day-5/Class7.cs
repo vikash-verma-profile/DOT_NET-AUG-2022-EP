@@ -34,7 +34,7 @@ namespace Day_5
     }
     class Class7
     {
-        public static void Main()
+        public static void Main8()
         {
             Myclass myclass = new Myclass();
             //myclass.SetX(10);
