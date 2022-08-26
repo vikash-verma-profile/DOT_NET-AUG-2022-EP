@@ -13,7 +13,7 @@ namespace Day_5
     }
     class Class9
     {
-        public static void Main()
+        public static void Main10()
         {
             int a;
             a = Convert.ToInt32(Console.ReadLine());
