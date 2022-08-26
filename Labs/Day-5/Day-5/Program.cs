@@ -34,7 +34,8 @@ namespace Day_5
             PhotoBook photoBook1 = new PhotoBook();
             Console.WriteLine(photoBook1.GetNumberPages());
 
-            PhotoBook photoBook2 = new PhotoBook(24);
+            int numpages = Convert.ToInt32(Console.ReadLine());
+            PhotoBook photoBook2 = new PhotoBook(numpages);
             Console.WriteLine(photoBook2.GetNumberPages());
 
             BigPhotoBook photoBook3 = new BigPhotoBook();
