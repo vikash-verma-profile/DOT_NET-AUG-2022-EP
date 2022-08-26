@@ -34,7 +34,7 @@ namespace Day_5
     }
     class Class6
     {
-        public static void Main()
+        public static void Main7()
         {
             C c = new C(1);
         }
