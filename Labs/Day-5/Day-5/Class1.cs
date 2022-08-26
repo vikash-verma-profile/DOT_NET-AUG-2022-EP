@@ -17,7 +17,7 @@ namespace Day_5
         /// as==>related to type casting or conversion
         /// </summary>
         /// 
-        public static void Main()
+        public static void Main2()
         {
             Sample obj = new Sample();
             Sample1 obj1 = new Sample1();
