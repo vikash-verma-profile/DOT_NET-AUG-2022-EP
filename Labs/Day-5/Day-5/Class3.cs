@@ -37,7 +37,7 @@ namespace Day_5
     }
     class Class3
     {
-        public static void Main()
+        public static void Main4()
         {
             Car c = new Car(0);
             int fuel = int.Parse(Console.ReadLine());
