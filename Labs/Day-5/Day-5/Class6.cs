@@ -12,8 +12,9 @@ namespace Day_5
         //    Console.WriteLine("Hi I am A");
         //}
 
-        public A(int a) {
-            Console.WriteLine("Value of a IN A is "+a);
+        public A(int a)
+        {
+            Console.WriteLine("Value of a IN A is " + a);
         }
 
     }
