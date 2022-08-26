@@ -29,7 +29,7 @@ namespace Day_5
     }
     class Program
     {
-        static void Main(string[] args)
+        static void Main1(string[] args)
         {
             PhotoBook photoBook1 = new PhotoBook();
             Console.WriteLine(photoBook1.GetNumberPages());
