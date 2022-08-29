@@ -23,7 +23,7 @@ namespace Day_6
     }
     class Class1
     {
-        public static void Main()
+        public static void Main2()
         {
             Console.WriteLine((int)months.feb);
             Console.WriteLine((int)Status.Inactive);
