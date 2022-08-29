@@ -25,12 +25,36 @@ namespace Day_6
             }
         }
 
+        //field
+        private int roll;
+        //property
+        public int roll_no
+        {
+            get
+            {
+                return roll_no;
+            }
+            set 
+            {   
+                roll = value;
+            }
+        }
+
+        private int _name;
+
+        public int Name { get { return _name; } set { _name = value; } }
+        public void Print()
+        {
+            Console.WriteLine(roll);
+        }
+
     }
     class Class3
     {
         public static void Main()
         {
             IndexerClass Team = new IndexerClass();
+            Team.roll_no = 101;
             Team[0] = "Vikash verma 1";
             Team[1] = "Vikash verma 2";
             Team[2] = "Vikash verma 3";
@@ -41,7 +65,7 @@ namespace Day_6
             {
                 Console.WriteLine(Team[i]);
             }
-
+            Team.Print();
         }
     }
 }
