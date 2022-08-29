@@ -21,7 +21,7 @@ namespace Day_5
             {
                 if (a == 0)
                 {
-                    throw (new CustomException("Zero value is not allowed"));
+                    throw (new CustomException("Please give valid input"));
                 }
                 else
                 {
