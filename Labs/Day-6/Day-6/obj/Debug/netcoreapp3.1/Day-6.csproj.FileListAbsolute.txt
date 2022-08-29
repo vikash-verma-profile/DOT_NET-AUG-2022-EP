@@ -12,3 +12,6 @@ C:\Users\LEVEL UP SOLUTIONS 1\Desktop\Dot-Net-Trainings\Labs\Day-6\Day-6\obj\Deb
 C:\Users\LEVEL UP SOLUTIONS 1\Desktop\Dot-Net-Trainings\Labs\Day-6\Day-6\obj\Debug\netcoreapp3.1\Day-6.dll
 C:\Users\LEVEL UP SOLUTIONS 1\Desktop\Dot-Net-Trainings\Labs\Day-6\Day-6\obj\Debug\netcoreapp3.1\Day-6.pdb
 C:\Users\LEVEL UP SOLUTIONS 1\Desktop\Dot-Net-Trainings\Labs\Day-6\Day-6\obj\Debug\netcoreapp3.1\Day-6.genruntimeconfig.cache
+C:\Users\LEVEL UP SOLUTIONS 1\Desktop\Dot-Net-Trainings\Labs\Day-6\Day-6\bin\Debug\netcoreapp3.1\ClassLibrary1.dll
+C:\Users\LEVEL UP SOLUTIONS 1\Desktop\Dot-Net-Trainings\Labs\Day-6\Day-6\bin\Debug\netcoreapp3.1\ClassLibrary1.pdb
+C:\Users\LEVEL UP SOLUTIONS 1\Desktop\Dot-Net-Trainings\Labs\Day-6\Day-6\obj\Debug\netcoreapp3.1\Day-6.csproj.CopyComplete

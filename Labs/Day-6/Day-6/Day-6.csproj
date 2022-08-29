@@ -6,4 +6,8 @@
     <RootNamespace>Day_6</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\ClassLibrary1\ClassLibrary1.csproj" />
+  </ItemGroup>
+
 </Project>

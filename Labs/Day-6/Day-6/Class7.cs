@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using ClassLibrary1;
 
 namespace Day_6
 {
@@ -23,6 +24,15 @@ namespace Day_6
             Console.WriteLine("Print");
         }
     }
+
+    static class ExtensionClass
+    {
+        public static void print(this ClassLibrary1.Class1 dummy)
+        {
+            Console.WriteLine("Print");
+            dummy.Show();
+        }
+    }
     class Class7
     {
         public static void Main()
@@ -30,6 +40,10 @@ namespace Day_6
             Dummy d = new Dummy();
             d.Show();
             d.print();
+
+            ClassLibrary1.Class1 c = new ClassLibrary1.Class1();
+            c.Show();
+            c.print();
         }
     }
 }
