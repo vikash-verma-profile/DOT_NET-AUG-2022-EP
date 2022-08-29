@@ -20,7 +20,7 @@ namespace Day_6
         {
             Console.WriteLine("Hi I am normal method");
         }
-        public static void Main()
+        public static void Main3()
         {
             Sample();
 
@@ -33,7 +33,8 @@ namespace Day_6
                 roll = 101
             };
 
-            var anyarray = new[] { new { name = "Vikash 1", roll = 101 } , new { name = "Vikash 2", roll = 102 } , new { name = "Vikash 3", roll = 103 } };
+            var anyarray = new[] { new { name = "Vikash 1", roll = 101 } , 
+                new { name = "Vikash 2", roll = 102 } , new { name = "Vikash 3", roll = 103 } };
             Console.WriteLine(s.Name);
             Console.WriteLine(s.roll);
             Console.WriteLine("===========================");
