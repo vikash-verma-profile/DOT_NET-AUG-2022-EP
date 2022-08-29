@@ -19,15 +19,20 @@ namespace Day_6
         {
             Console.WriteLine("Sum of two numbers are :"+(a+b));
         }
-        public static void Main5()
+        public void Sub(int a, int b)
+        {
+            Console.WriteLine("Sub of two numbers are :" + (a - b));
+        }
+        public static void Main()
         {
             Class4 class4 = new Class4();
             //Linking
             addNum delObj = new addNum(class4.sum);
-
+            addNum delObj1 = new addNum(class4.Sub);
             //calling or invoking
             delObj(100, 200);
-            delObj.Invoke(2,3);
+            delObj1(100, 200);
+            //delObj.Invoke(2,3);
         }
     }
 }
