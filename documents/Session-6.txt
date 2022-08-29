@@ -1,0 +1,4 @@
+Structure 					VS CLASS
+
+structs are value types     Refernce types
+Stack						Heap
