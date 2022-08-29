@@ -10,6 +10,7 @@ namespace Day_6
     /// 
     public partial class Employee
     {
+        int a;
         public void Dowork()
         {
             Console.WriteLine("Dowork");
@@ -21,6 +22,7 @@ namespace Day_6
     }
     public partial class Employee
     {
+        //int a;
         public void DoLunch()
         {
             Console.WriteLine("DoLunch");
@@ -33,7 +35,7 @@ namespace Day_6
     class Class6
     {
 
-        public static void Main()
+        public static void Main7()
         {
             Employee e = new Employee();
             e.DoLunch();
