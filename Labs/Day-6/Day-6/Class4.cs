@@ -23,7 +23,7 @@ namespace Day_6
         {
             Console.WriteLine("Sub of two numbers are :" + (a - b));
         }
-        public static void Main()
+        public static void Main5()
         {
             Class4 class4 = new Class4();
             //Linking
