@@ -2,3 +2,17 @@ Structure 					VS CLASS
 
 structs are value types     Refernce types
 Stack						Heap
+Allocation and deallocation Allocation of large refernce types is cheaper than allocation of large value types
+is chaeper
+
+
+Where to use Delegate or Purpose of having delegates
+
+1.We can store the method and we can use it anywhere
+2.Event Handling
+
+
+Delegate
+
+A delegate is a type that represents a method with a specific signature and return type.
+ 

@@ -51,7 +51,7 @@ namespace Day_6
     }
     class Class3
     {
-        public static void Main()
+        public static void Main4()
         {
             IndexerClass Team = new IndexerClass();
             Team.roll_no = 101;
