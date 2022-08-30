@@ -11,4 +11,3 @@ C:\Users\LEVEL UP SOLUTIONS 1\Desktop\Dot-Net-Trainings\Labs\Day-7\Day-7\obj\Deb
 C:\Users\LEVEL UP SOLUTIONS 1\Desktop\Dot-Net-Trainings\Labs\Day-7\Day-7\obj\Debug\netcoreapp3.1\Day-7.dll
 C:\Users\LEVEL UP SOLUTIONS 1\Desktop\Dot-Net-Trainings\Labs\Day-7\Day-7\obj\Debug\netcoreapp3.1\Day-7.pdb
 C:\Users\LEVEL UP SOLUTIONS 1\Desktop\Dot-Net-Trainings\Labs\Day-7\Day-7\obj\Debug\netcoreapp3.1\Day-7.genruntimeconfig.cache
-C:\Users\LEVEL UP SOLUTIONS 1\Desktop\Dot-Net-Trainings\Labs\Day-7\Day-7\obj\Debug\netcoreapp3.1\Day-7.csproj.AssemblyReference.cache
