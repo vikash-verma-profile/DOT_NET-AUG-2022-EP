@@ -36,7 +36,7 @@ namespace Day_7
         {
             return (SI * 100) / (p * r);
         }
-        static void Main(string[] args)
+        static void Main1(string[] args)
         {
             double SI;
 
