@@ -11,7 +11,7 @@ namespace Day_7
 /// </summary>
     class Class4
     {
-        public static void Main()
+        public static void Main5()
         {
             List<int> lst = new List<int>();
             lst.Add(100);
