@@ -15,7 +15,9 @@ namespace Day_8
 
     class EmployeeData
     {
-        public int Id { get; set; }
+        int _id=5;
+
+        public int Id { get { return _id; } set { _id = value; } }
         public string Name { get; set; }
 
         public void getData()
@@ -45,7 +47,8 @@ namespace Day_8
             bool Flag = true;
             int choice;
             EmployeeData employee1 = new EmployeeData();
-            List<EmployeeData> emdata = employee1.ReadFile().Employees==null?new List<EmployeeData>(): employee1.ReadFile().Employees;
+            List<EmployeeData> emdata =
+                employee1.ReadFile()==null?new List<EmployeeData>(): employee1.ReadFile().Employees;
             EmployeeList emplist = new EmployeeList();
             while (Flag)
             {
@@ -58,7 +61,9 @@ namespace Day_8
                         EmployeeData employee = new EmployeeData();
                         employee.getData();
                         emdata.Add(employee);
+
                         emplist.Employees = emdata;
+
                         employee.writeInFile(emplist);
                         break;
                     case 2:
