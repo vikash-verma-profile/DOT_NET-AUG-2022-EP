@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "d+9LNHnjN/iQuP2jJkYU4jrpPsB6ud9HK4YFq8jntKlEwpvcWkQEuJt2sjck6ATrSaWCrJ08svJppr4wcOtPZA==",
+  "dgSpecHash": "p+Vtn7sNSug99LHyq4DaawdXp9+mORDAnKdzlJQ/o4v1KdBaDciM4EbIlTMKB6A3/CEe+hf/UBem9HYGub34Ww==",
   "success": true,
   "projectFilePath": "C:\\Users\\LEVEL UP SOLUTIONS 1\\Desktop\\Dot-Net-Trainings\\Labs\\Day-8\\Day-8\\Day-8.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\LEVEL UP SOLUTIONS 1\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+  ],
   "logs": []
 }
