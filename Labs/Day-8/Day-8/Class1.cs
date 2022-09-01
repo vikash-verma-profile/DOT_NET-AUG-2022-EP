@@ -19,7 +19,7 @@ namespace Day_8
     }
     class Class1
     {
-        public static void Main()
+        public static void Main2()
         {
             student[] students = new student[2];
             for (int i = 0; i < students.Length; i++)
