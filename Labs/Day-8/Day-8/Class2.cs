@@ -42,7 +42,7 @@ namespace Day_8
     }
     class Class2
     {
-        public static void Main()
+        public static void Main3()
         {
             bool Flag = true;
             int choice;
