@@ -19,7 +19,7 @@ namespace Day_7
         {
 
         }
-        public static void Main()
+        public static void Main7()
         {
             //1.Allocation==>aquire raw heap memory
             //2.Intialization
