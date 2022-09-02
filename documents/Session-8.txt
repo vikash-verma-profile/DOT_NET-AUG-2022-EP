@@ -1,0 +1,16 @@
+Sql Commands
+
+1.DDL--Create,Drop,Alter,Truncate
+2.DML--Insert,Update,Delete
+3.DCL--Grant,Revoke
+4.TCL-Commit ,rollback,savepoint
+5.DQL-Select
+
+Clauses IN sql
+
+Where
+LiKE
+GROUP BY
+HAVING
+IN
+NOT IN
