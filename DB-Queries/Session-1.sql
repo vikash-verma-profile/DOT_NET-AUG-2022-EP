@@ -61,7 +61,38 @@ select Name from Sample where Salary =(select MAx(SALARY) from Sample )
 
 select  Name from Sample group by Name having count(Name)>1
 
-select  SALARY from Sample group by SALARY having SALARY=MAX(SALARY)
+select  SALARY from Sample group by SALARY having SALARY=MAX(SALARY)\
+
+select * from Sample where ID not in (1,2,3)
 
 
+create table Employee(ID int identity(1,1),Name varchar(200),Salary int,DepId int)
 
+create table Department(ID int identity(1,1),DepartmentName varchar(200))
+
+select * from Employee
+select * from Department
+
+insert	into Employee values('Rohit',10000,1)
+insert	into Employee values('Rohit 2',10000,2)
+insert	into Employee values('Rohit 3',10000,1)
+insert	into Employee values('Rohit 5',10000,5)
+
+insert into Department values('Sales')
+insert into Department values('IT')
+insert into Department values('Admin')
+
+select emp.Name,D.DepartmentName from 
+EMployee emp inner join Department D on emp.DepId=D.ID
+
+select emp.Name,D.DepartmentName from 
+EMployee emp RIGHT OUTER join Department D on emp.DepId=D.ID
+
+select emp.Name,D.DepartmentName from 
+EMployee emp LEFT OUTER join Department D on emp.DepId=D.ID
+
+select emp.Name,D.DepartmentName from 
+EMployee emp FULL OUTER join Department D on emp.DepId=D.ID
+
+select * from Employee
+select * from Department
