@@ -8,7 +8,7 @@ namespace Day_9
     /// </summary>
     class Program
     {
-        static void Main(string[] args)
+        static void Main1(string[] args)
         {
             Console.WriteLine("Hello World!");
             // Tuple<bool, string> s = new Tuple<bool, string>(true,"");
