@@ -3,13 +3,15 @@ Use DemoDB
 Create Table Sample(Id int,Name Varchar(200))
 select * from Sample;
 Insert into Sample(Id,Name) Values(2,'Vikash')
+Insert into Sample(Id,Name) Values(1,'Vikash 1')
+Insert into Sample(Id,Name) Values(3,'Vikash 3')
 Update Sample SET Name='RAM'
 Update Sample SET Name='Vikash' where id=2
 
 select * from sample where ID=2
 select * from Sample where Name='Vikash'
 
-Create table Product (ID int,FinalAmount decimal(5,2),MRP decimal(5,2),Discount decimal(5,2),
+Create table Product (ID int,FinalAmount decimal(5,3),MRP decimal(5,2),Discount decimal(5,2),
 productname varchar(200),ProductDescription varchar(2000))
 
 select * from Product
@@ -22,5 +24,23 @@ select * from Product where productname LIKE 'Lenovo%'
 select * from Product where productname LIKE '%Lenovo%'
 
 insert into Product Values(3,90,100,10,'Tri-Activ Polyester Adults Washable Mosquito Net Double Bed Lenovo','Tri-Activ Polyester Adults Washable Mosquito Net Double Bed, King-Size Premium Machardani Piramal, Strong & Durable Mosquito Net  (Blue, Bed Box)')
+insert into Product Values(4,900.00,100,10,'Tri-Activ Polyester Adults Washable Mosquito Net Double Bed Lenovo','Tri-Activ Polyester Adults Washable Mosquito Net Double Bed, King-Size Premium Machardani Piramal, Strong & Durable Mosquito Net  (Blue, Bed Box)')
+insert into Product Values(5,9000,100,10,'Tri-Activ Polyester Adults Washable Mosquito Net Double Bed Lenovo','Tri-Activ Polyester Adults Washable Mosquito Net Double Bed, King-Size Premium Machardani Piramal, Strong & Durable Mosquito Net  (Blue, Bed Box)')
 
+Create table DemoP (ID int identity(2,2),SumValue Decimal(5,3))
+insert into DemoP Values(19.001)
+
+alter Table DemoP ADD STATUS int
+select * from DemoP
+
+alter table DemoP DROP Column STATUS
+
+alter table Demop ALTER Column SumValue Decimal(6,3)
 --adsaLenovo
+
+Drop Table DemoP
+
+select * from Sample
+
+truncate Table  DemoP 
+delete from DemoP where id=1
