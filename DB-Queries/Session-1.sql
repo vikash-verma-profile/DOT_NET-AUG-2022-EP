@@ -4,7 +4,7 @@ Create Table Sample(Id int,Name Varchar(200))
 select * from Sample;
 Insert into Sample(Id,Name) Values(2,'Vikash')
 Insert into Sample(Id,Name) Values(1,'Vikash 1')
-Insert into Sample(Id,Name) Values(3,'Vikash 3')
+Insert into Sample(Id,Name) Values(4,'Vikash 3')
 Update Sample SET Name='RAM'
 Update Sample SET Name='Vikash' where id=2
 
@@ -44,3 +44,24 @@ select * from Sample
 
 truncate Table  DemoP 
 delete from DemoP where id=1
+
+select * from sample order by id desc
+
+alter Table sample ADD Salary int
+update  sample set Salary=4000 where id=4
+
+select count(*) as RecordCount from Sample
+select Name as FULLNAME,SALARY AS EMPLOYEESALARY from sample
+
+select MAx(SALARY) from Sample
+select Name from Sample --where Salary=Max(Salary)
+--sub queries
+
+select Name from Sample where Salary =(select MAx(SALARY) from Sample )
+
+select  Name from Sample group by Name having count(Name)>1
+
+select  SALARY from Sample group by SALARY having SALARY=MAX(SALARY)
+
+
+
