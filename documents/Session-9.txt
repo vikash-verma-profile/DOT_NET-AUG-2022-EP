@@ -16,3 +16,16 @@ PRIMARY KEY
 UNIQUE KEY
 FORIEGN KEY
 
+we can have null value in unique key but we cannot have null in primary key
+
+Create a table student
+id
+firstname
+lastname
+gender
+age
+
+course
+
+join 2 tables and get the data which course is opted by which student
+

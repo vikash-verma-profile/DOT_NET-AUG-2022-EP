@@ -28,3 +28,19 @@ create table tbldummy(id int,Text varchar(200) DEFAULT 'vikash')
 select * from tbldummy
 insert into tbldummy values(1,'vikash 1267')
 insert into tbldummy(id) values(2)
+
+alter table tbldummy drop column id;
+alter table tbldummy drop column Text;
+
+create table tblStudent(id int ,Name varchar(20),Primary KEY(id),UNIQUE(Name))
+
+insert into tblStudent Values(1,'Vikash')
+insert into tblStudent Values(2,null)
+
+Create table Customer(id int identity(1,1),Name varchar(200),Age int,Primary Key(id));
+Create table tblOrder(id int identity(1,1),OrderNumber varchar(200),CutomerID int,Primary Key(id),Foreign Key(CutomerID) REFERENCES Customer(ID));
+
+select CONCAT(FirstName,'  ',LastName) as FULLNAME from Customer
+select * from tblOrder
+Delete from Customer where id=1
+
