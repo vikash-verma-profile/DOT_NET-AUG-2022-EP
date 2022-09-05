@@ -44,3 +44,18 @@ select CONCAT(FirstName,'  ',LastName) as FULLNAME from Customer
 select * from tblOrder
 Delete from Customer where id=1
 
+Create table student(id int identity(1,1),firstname varchar(200),
+lastname varchar(200),
+gender varchar(200),
+CourseId int,
+age int,Primary KEY(id),Foreign Key(CourseId) REFERENCES Course(id))
+
+Create table Course(id int identity(1,1) ,CourseName varchar(200),Primary KEY(id))
+
+select * from student
+select * from course
+insert into Course values('CSE'),('ME'),('IT'),('Civil')
+insert into student values('Vikash','Verma','Male',1,43),('Suresh','Kumar','Male',2,43),
+('Anjali','Kumari','Female',3,25)
+
+select CONCAT('XYZ00',s.id) as StudentId,CONCAT(s.firstname,' ',s.lastname) as StudentName,C.CourseName from student s join Course C on S.CourseId=C.id
