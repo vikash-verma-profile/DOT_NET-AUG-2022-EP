@@ -71,3 +71,36 @@ select dbo.GetName(id) as FullName from student
 
 select dbo.GetName(2)
 
+select * from student
+select CASE WHEN age%2=0 THEN 'EVEN' ELSE 'ODD' END as ODDEVEN from student
+
+Create function CheckOddEven(@id int)
+returns varchar(200) As
+Begin
+return (select CASE WHEN age%2=0 THEN 'EVEN' ELSE 'ODD' END as ODDEVEN from student where id=@id);
+END
+
+
+select dbo.CheckOddEven(id) from student
+
+select REVERSE('Vikash')
+
+select dbo.CheckPalindrome('DAD')
+select dbo.CheckPalindrome(dbo.GetName(id)) from student
+
+Create function CheckPalindrome(@Name varchar(200) )
+returns varchar(200) As
+Begin
+DECLARE @Text varchar(200);
+IF REVERSE(@Name)=@Name 
+BEGIN
+set @Text='Palindrome';
+END
+ELSE
+BEGIN
+set @Text='Not a Palindrome';
+END
+
+return @Text;
+END
+
