@@ -104,3 +104,23 @@ END
 return @Text;
 END
 
+Declare @s int;
+set @s=1;
+Select * from student where id=@s;
+
+--Store procedures
+
+Create table CourseSubject (ID int identity(1,1),SubjectName varchar(200),CourseID int,
+primary Key(iD),Foreign Key(CourseID) REFERENCES Course(ID))
+
+select  * from student
+select * from course
+Insert into student values('Raj','Kumar','Male',1,27)
+alter table student add  StudentId varchar(10)
+
+create procedure GenerateStudentID(@studentfirstName varchar(200),@studentlastName varchar(200),
+@Gender varchar(200),@CourseName nvarchar(20),@age int) as
+Begin 
+
+END;
+
