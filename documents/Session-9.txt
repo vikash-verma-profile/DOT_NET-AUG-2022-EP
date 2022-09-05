@@ -29,3 +29,6 @@ course
 
 join 2 tables and get the data which course is opted by which student
 
+check which age is odd and even
+and which name is palindrome in student table
+

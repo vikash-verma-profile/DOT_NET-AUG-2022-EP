@@ -58,4 +58,16 @@ insert into Course values('CSE'),('ME'),('IT'),('Civil')
 insert into student values('Vikash','Verma','Male',1,43),('Suresh','Kumar','Male',2,43),
 ('Anjali','Kumari','Female',3,25)
 
-select CONCAT('XYZ00',s.id) as StudentId,CONCAT(s.firstname,' ',s.lastname) as StudentName,C.CourseName from student s join Course C on S.CourseId=C.id
+select CONCAT('XYZ00',s.id) as StudentId,dbo.GetName(s.id) as StudentName,C.CourseName from student s join Course C on S.CourseId=C.id
+
+
+Create function GetName(@id int)
+returns varchar(200) As
+Begin
+return (select CONCAT(firstname,' ',lastname) as StudentName from student where id=@id);
+END
+
+select dbo.GetName(id) as FullName from student
+
+select dbo.GetName(2)
+
