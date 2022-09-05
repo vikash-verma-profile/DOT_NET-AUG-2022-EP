@@ -122,5 +122,12 @@ create procedure GenerateStudentID(@studentfirstName varchar(200),@studentlastNa
 @Gender varchar(200),@CourseName nvarchar(20),@age int) as
 Begin 
 
+DECLARE @CourseID int;
+IF((select count(*) from course where CourseName=@CourseName)>0)
+BEGIN
+set @CourseID=(select ID from Course where CourseName=@CourseName)
+Insert into student values(@studentfirstName,@studentlastName,@Gender,@CourseID,@age,'')
+
+END
 END;
 
