@@ -1,0 +1,18 @@
+Distinct Clause
+Constraints
+functions-
+Store procedures
+Views
+Indexes
+Exceptional Handling
+
+
+Constraints
+
+NOT NULL
+UNIQUE
+DEFAULT
+PRIMARY KEY
+UNIQUE KEY
+FORIEGN KEY
+
