@@ -6,7 +6,7 @@ namespace Customers
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main1(string[] args)
         {
             EmployeeDbContext db = new EmployeeDbContext();
             bool flag = true;
