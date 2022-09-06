@@ -33,5 +33,10 @@ check which age is odd and even
 and which name is palindrome in student table
 
 scaffold-DbContext "Data Source=DESKTOP-PP0TB7N;Initial Catalog=EmployeeDb;Integrated Security=True" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models
+-Force
 
 command <connection-string> <provider> <output directory/folder>
+
+
+First -- it doesnot handle null values
+FirstorDefault

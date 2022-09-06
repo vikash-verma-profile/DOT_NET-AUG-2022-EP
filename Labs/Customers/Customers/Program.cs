@@ -9,26 +9,28 @@ namespace Customers
         static void Main(string[] args)
         {
             EmployeeDbContext db = new EmployeeDbContext();
-            bool flag=true;
+            bool flag = true;
             while (flag)
             {
+                Console.WriteLine("==============================");
                 Console.WriteLine("Please enter your choice \n 1.ADD record \n 2.Update Record \n 3.Delete \n 4.List \n 5.Exit");
                 int choice = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("===============================");
                 switch (choice)
                 {
                     case 1:
                         AddRecord(db);
                         break;
                     case 2:
+                        PrintRecords(db);
+                        UpdateRecord(db);
                         break;
-
                     case 3:
+                        PrintRecords(db);
+                        DeleteRecord(db);
                         break;
                     case 4:
-                        foreach (var item in ReadRecords(db))
-                        {
-                            Console.WriteLine(item.Id+":"+item.StudentName);
-                        }
+                        PrintRecords(db);
                         break;
                     case 5:
                         flag = false;
@@ -40,8 +42,8 @@ namespace Customers
                 if (!flag)
                     break;
             }
-           
-            
+
+
         }
 
         public static void AddRecord(EmployeeDbContext db) {
@@ -56,9 +58,36 @@ namespace Customers
             Console.WriteLine("db record added successfully");
         }
 
-        public static  List<TblStudent> ReadRecords(EmployeeDbContext db)
+        public static void PrintRecords(EmployeeDbContext db)
         {
-            return db.TblStudents.ToList();
+            Console.WriteLine("ID| Student Name");
+            foreach (var item in db.TblStudents)
+            {
+                Console.WriteLine(item.Id + " | " + item.StudentName);
+            }
+        }
+
+        public static void UpdateRecord(EmployeeDbContext db)
+        {
+            Console.WriteLine("Please select an Id to update");
+            int Id = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Please enter the new name");
+            string newName = Console.ReadLine();
+            var studentObj = db.TblStudents.Where(x => x.Id == Id).FirstOrDefault();
+            studentObj.StudentName = newName;
+            db.TblStudents.Update(studentObj);
+            db.SaveChanges();
+            Console.WriteLine("Record is updated successfully");
+        }
+
+        public static void DeleteRecord(EmployeeDbContext db)
+        {
+            Console.WriteLine("Please select an Id to update");
+            int Id = Convert.ToInt32(Console.ReadLine());
+            var studentObj = db.TblStudents.Where(x => x.Id == Id).FirstOrDefault();
+            db.TblStudents.Remove(studentObj);
+            db.SaveChanges();
+            Console.WriteLine("Record is deleted successfully");
         }
     }
 }
