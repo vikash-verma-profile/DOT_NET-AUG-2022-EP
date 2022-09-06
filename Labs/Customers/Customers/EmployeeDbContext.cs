@@ -40,11 +40,23 @@ namespace Customers
                 entity.Property(e => e.Id).HasColumnName("ID");
 
                 entity.Property(e => e.EmployeeName).HasMaxLength(50);
+
+                entity.Property(e => e.Gender)
+                    .HasMaxLength(50)
+                    .IsUnicode(false);
+
+                entity.Property(e => e.Surnama)
+                    .HasMaxLength(50)
+                    .IsUnicode(false);
             });
 
             modelBuilder.Entity<TblStudent>(entity =>
             {
                 entity.ToTable("tblStudent");
+
+                entity.Property(e => e.Gender)
+                    .HasMaxLength(50)
+                    .IsUnicode(false);
 
                 entity.Property(e => e.StudentName)
                     .HasMaxLength(200)

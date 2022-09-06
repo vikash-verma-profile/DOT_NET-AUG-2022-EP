@@ -7,7 +7,7 @@ namespace Customers
 {
     class Class1
     {
-        public static void Main()
+        public static void Main2()
         {
             EmployeeDbContext db = new EmployeeDbContext();
             //order by clause in linq
