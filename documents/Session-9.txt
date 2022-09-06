@@ -32,5 +32,6 @@ join 2 tables and get the data which course is opted by which student
 check which age is odd and even
 and which name is palindrome in student table
 
+scaffold-DbContext "Data Source=DESKTOP-PP0TB7N;Initial Catalog=EmployeeDb;Integrated Security=True" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models
 
-
+command <connection-string> <provider> <output directory/folder>

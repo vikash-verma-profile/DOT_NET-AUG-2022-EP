@@ -17,6 +17,7 @@ namespace Customers
         {
         }
 
+        public virtual DbSet<TblEmployee> TblEmployees { get; set; }
         public virtual DbSet<TblStudent> TblStudents { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
@@ -31,6 +32,15 @@ namespace Customers
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.HasAnnotation("Relational:Collation", "SQL_Latin1_General_CP1_CI_AS");
+
+            modelBuilder.Entity<TblEmployee>(entity =>
+            {
+                entity.ToTable("tblEmployee");
+
+                entity.Property(e => e.Id).HasColumnName("ID");
+
+                entity.Property(e => e.EmployeeName).HasMaxLength(50);
+            });
 
             modelBuilder.Entity<TblStudent>(entity =>
             {
