@@ -1,2 +1,15 @@
 IQuerable
 Ienumberable
+
+
+Employee Table and an Department Table and join
+
+ID
+FIrst Name
+Last Name
+Salary
+DepartmentID
+
+
+ID
+DepartmentName
