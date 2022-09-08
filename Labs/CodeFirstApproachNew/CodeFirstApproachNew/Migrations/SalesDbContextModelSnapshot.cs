@@ -25,6 +25,9 @@ namespace CodeFirstApproachNew.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
+                    b.Property<int>("IsActive")
+                        .HasColumnType("int");
+
                     b.Property<string>("SalesPerson")
                         .HasColumnType("nvarchar(max)");
 

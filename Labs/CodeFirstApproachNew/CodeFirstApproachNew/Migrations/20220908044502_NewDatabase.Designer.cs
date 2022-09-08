@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CodeFirstApproachNew.Migrations
 {
     [DbContext(typeof(SalesDbContext))]
-    [Migration("20220908035225_NewDatabase")]
+    [Migration("20220908044502_NewDatabase")]
     partial class NewDatabase
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -26,6 +26,9 @@ namespace CodeFirstApproachNew.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<int>("IsActive")
+                        .HasColumnType("int");
 
                     b.Property<string>("SalesPerson")
                         .HasColumnType("nvarchar(max)");
