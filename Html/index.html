@@ -1,14 +1,20 @@
 <html>
 <title>
-My FIrst web page
+    My FIrst web page
 </title>
+
 <body bgcolor="red">
 
-Number
-<input type="text" id="txtNumber" value="10"/>
-<input type="button" value="Check" onclick="checkOddEven()"/>
+    Number
+    <input type="text" id="txtNumber1" value="10" />
+    <input type="text" id="txtNumber2" value="10" />
+    <input type="text" id="txtOutput" value="0" />
+    <input type="button" value="+" onclick="Calculate('+')" />
+    <input type="button" value="-" onclick="Calculate('-')" />
+    <input type="button" value="*" onclick="Calculate('*')" />
+    <input type="button" value="/" onclick="Calculate('/')" />
 
-<label style="color: white;" id="lblMessage"></label>
+    <label style="color: white;" id="lblMessage"></label>
 </body>
 
 </html>
@@ -16,12 +22,25 @@ Number
 
     //DOM=>document object model
 
-//alert('asd');
+    //alert('asd');
 
-function checkOddEven(){
-    var Number1=document.getElementById('txtNumber').value;
-    console.log(Number1);
+    function checkOddEven() {
+        var Number1 = document.getElementById('txtNumber').value;
+        console.log(Number1);
 
-  document.getElementById('lblMessage').innerHTML="Value enter by you is :"+Number1;
-}
+        document.getElementById('lblMessage').innerHTML = "Value enter by you is :" + Number1;
+    }
+
+    function Calculate(input) {
+        var Number1 = Number(document.getElementById('txtNumber1').value);
+        var Number2 = Number(document.getElementById('txtNumber2').value);
+        switch (input) {
+            case '+':
+                document.getElementById('txtOutput').value = (Number1 + Number2);
+                break;
+            default:
+                document.getElementById('txtOutput').value = 0;
+                break;
+        }
+    }
 </script>
