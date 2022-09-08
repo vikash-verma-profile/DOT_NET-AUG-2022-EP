@@ -5,8 +5,19 @@ My FIrst web page
 <body bgcolor="red">
 
 Number
-<input type="text" />
-<input type="button" value="Check"/>
+<input type="text" id="txtNumber" value="10"/>
+<input type="button" value="Check" onclick="checkOddEven()"/>
 </body>
 
 </html>
+<script>
+
+    //DOM=>document object model
+
+//alert('asd');
+
+function checkOddEven(){
+    var Number1=document.getElementById('txtNumber').value;
+    console.log(Number1);
+}
+</script>
