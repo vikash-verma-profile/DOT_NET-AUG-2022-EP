@@ -7,6 +7,8 @@ My FIrst web page
 Number
 <input type="text" id="txtNumber" value="10"/>
 <input type="button" value="Check" onclick="checkOddEven()"/>
+
+<label style="color: white;" id="lblMessage"></label>
 </body>
 
 </html>
@@ -19,5 +21,7 @@ Number
 function checkOddEven(){
     var Number1=document.getElementById('txtNumber').value;
     console.log(Number1);
+
+  document.getElementById('lblMessage').innerHTML="Value enter by you is :"+Number1;
 }
 </script>
