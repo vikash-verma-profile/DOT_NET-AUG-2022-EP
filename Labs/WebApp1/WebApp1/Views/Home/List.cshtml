@@ -1,0 +1,21 @@
+﻿@model IEnumerable<WebApp1.Models.TblUserDetail>
+
+<table>
+    <tr>
+        <td>First Name</td>
+        <td>Last Name</td>
+        <td>Gender</td>
+        <td>Age</td>
+    </tr>
+    @foreach (var item in Model)
+    {
+<tr>
+    <td>@Html.Raw(item.FirstName)</td>
+    <td>@Html.Raw(item.LastName)</td>
+    <td>@Html.Raw(item.Gender)</td>
+    <td>@Html.Raw(item.Age)</td>
+</tr>
+
+    }
+
+</table>

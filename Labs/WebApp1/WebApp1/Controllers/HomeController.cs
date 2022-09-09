@@ -19,7 +19,13 @@ namespace WebApp1.Controllers
         {
             db.TblUserDetails.Add(tblUserDetail);
             db.SaveChanges();
-            return View();
+            return RedirectToAction("Index");
         }
+        public IActionResult List()
+        {
+            var list = db.TblUserDetails;
+            return View(list);
+        }
+       
     }
 }
