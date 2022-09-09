@@ -1,0 +1,53 @@
+<html>
+<title>
+    Validation Form
+</title>
+
+<body align="center">
+
+    <h1>Register Here !!</h1>
+    <br/><br/>
+    FirstName
+    <input type="text" id="txtFirstName"  />
+    <br/><br/>
+    LastName
+    <input type="text" id="txtLastName"  />
+    <br/><br/>
+    Email
+    <input type="text" id="txtEmail"  />
+    <br/><br/>
+    Gender
+    <input type="text" id="txtGender"  />
+    <br/><br/>
+    Age
+    <input type="text" id="txtAge"  />
+    <br/><br/>
+    <input type="button" value="Register" onclick="Validate()" />
+    <br/><br/>
+    <label id="lblMessage" style="color:red"></label>
+
+</body>
+
+</html>
+<script>
+
+   
+
+    function Validate() {
+        var FirstName = document.getElementById('txtFirstName').value;
+        var LastName = document.getElementById('txtLastName').value;
+        var Gender = document.getElementById('txtGender').value;
+        var Age = document.getElementById('txtAge').value;
+        var Email = document.getElementById('txtEmail').value;
+      
+        if(FirstName=='' || LastName=='' ||  Gender=='' ||  Age=='' || Email==''){
+            document.getElementById('lblMessage').innerHTML = "All Fields are Mandatory";
+        }
+        else{
+            document.getElementById('lblMessage').innerHTML = "Validated";
+        }
+     
+    }
+
+  
+</script>
