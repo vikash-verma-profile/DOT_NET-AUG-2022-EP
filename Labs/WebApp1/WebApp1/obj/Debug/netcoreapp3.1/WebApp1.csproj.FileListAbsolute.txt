@@ -339,8 +339,6 @@ C:\Users\LEVEL UP SOLUTIONS 1\Desktop\Dot-Net-Trainings\Labs\WebApp1\WebApp1\obj
 C:\Users\LEVEL UP SOLUTIONS 1\Desktop\Dot-Net-Trainings\Labs\WebApp1\WebApp1\obj\Debug\netcoreapp3.1\WebApp1.TagHelpers.output.cache
 C:\Users\LEVEL UP SOLUTIONS 1\Desktop\Dot-Net-Trainings\Labs\WebApp1\WebApp1\obj\Debug\netcoreapp3.1\WebApp1.RazorCoreGenerate.cache
 C:\Users\LEVEL UP SOLUTIONS 1\Desktop\Dot-Net-Trainings\Labs\WebApp1\WebApp1\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
-C:\Users\LEVEL UP SOLUTIONS 1\Desktop\Dot-Net-Trainings\Labs\WebApp1\WebApp1\obj\Debug\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
-C:\Users\LEVEL UP SOLUTIONS 1\Desktop\Dot-Net-Trainings\Labs\WebApp1\WebApp1\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
 C:\Users\LEVEL UP SOLUTIONS 1\Desktop\Dot-Net-Trainings\Labs\WebApp1\WebApp1\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
 C:\Users\LEVEL UP SOLUTIONS 1\Desktop\Dot-Net-Trainings\Labs\WebApp1\WebApp1\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
 C:\Users\LEVEL UP SOLUTIONS 1\Desktop\Dot-Net-Trainings\Labs\WebApp1\WebApp1\obj\Debug\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
