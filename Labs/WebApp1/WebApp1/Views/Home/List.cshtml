@@ -1,23 +1,28 @@
 ﻿@model IEnumerable<WebApp1.Models.TblUserDetail>
 
-@{ 
-    
+@{
+
 }
-<table>
-    <tr>
-        <td>First Name</td>
-        <td>Last Name</td>
-        <td>Gender</td>
-        <td>Age</td>
-    </tr>
+<table class="table">
+    <thead class="table-light">
+        <tr>
+            <td>First Name</td>
+            <td>Last Name</td>
+            <td>Gender</td>
+            <td>Age</td>
+            <td>Actions</td>
+        </tr>
+    </thead>
+
     @foreach (var item in Model)
     {
-<tr>
-    <td>@Html.Raw(item.FirstName)</td>
-    <td>@Html.Raw(item.LastName)</td>
-    <td>@Html.Raw(item.Gender)</td>
-    <td>@Html.Raw(item.Age)</td>
-</tr>
+        <tr>
+            <td>@Html.Raw(item.FirstName)</td>
+            <td>@Html.Raw(item.LastName)</td>
+            <td>@Html.Raw(item.Gender)</td>
+            <td>@Html.Raw(item.Age)</td>
+            <td><a class="btn btn-primary" asp-controller="Home" asp-action="Edit" asp-route-UserId="@item.Id">EDIT</a></td>
+        </tr>
 
     }
 

@@ -26,6 +26,12 @@ namespace WebApp1.Controllers
             var list = db.TblUserDetails;
             return View(list);
         }
+        public IActionResult Edit(int UserId)
+        {
+            var data=db.TblUserDetails.Where(x=>x.Id==UserId).FirstOrDefault();
+            return View("Index", data);
+        }
+
        
     }
 }
