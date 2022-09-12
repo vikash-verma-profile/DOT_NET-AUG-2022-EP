@@ -21,7 +21,10 @@
             <td>@Html.Raw(item.LastName)</td>
             <td>@Html.Raw(item.Gender)</td>
             <td>@Html.Raw(item.Age)</td>
-            <td><a class="btn btn-primary" asp-controller="Home" asp-action="Edit" asp-route-UserId="@item.Id">EDIT</a></td>
+            <td>
+                <a class="btn btn-primary" asp-controller="Home" asp-action="Edit" asp-route-UserId="@item.Id">Edit</a>
+                <a class="btn btn-primary" asp-controller="Home" asp-action="Delete" asp-route-UserId="@item.Id">Delete</a>
+            </td>
         </tr>
 
     }

@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,14 +13,24 @@ namespace WebApp1.Controllers
         WebDBContext db = new WebDBContext();
         public IActionResult Index()
         {
+            HttpContext.Session.SetInt32("IsEdit",0);
             return View();
         }
 
         public IActionResult Submit(TblUserDetail tblUserDetail)
         {
-            db.TblUserDetails.Add(tblUserDetail);
-            db.SaveChanges();
-            return RedirectToAction("Index");
+            if (HttpContext.Session.GetInt32("IsEdit") == 1)
+            {
+                db.TblUserDetails.Update(tblUserDetail);
+                db.SaveChanges();
+            }
+            else
+            {
+                db.TblUserDetails.Add(tblUserDetail);
+                db.SaveChanges();
+            }
+          
+            return RedirectToAction("List");
         }
         public IActionResult List()
         {
@@ -28,10 +39,17 @@ namespace WebApp1.Controllers
         }
         public IActionResult Edit(int UserId)
         {
+            HttpContext.Session.SetInt32("IsEdit", 1);
             var data=db.TblUserDetails.Where(x=>x.Id==UserId).FirstOrDefault();
             return View("Index", data);
         }
+        public IActionResult Delete(int UserId)
+        {
+            var data = db.TblUserDetails.Where(x => x.Id == UserId).FirstOrDefault();
+            db.TblUserDetails.Remove(data);
+            db.SaveChanges();
+            return RedirectToAction("List");
+        }
 
-       
     }
 }
