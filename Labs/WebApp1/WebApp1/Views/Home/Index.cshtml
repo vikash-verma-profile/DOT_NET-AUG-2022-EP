@@ -1,4 +1,10 @@
 ﻿@model  WebApp1.Models.TblUserDetail
+@using Microsoft.AspNetCore.Http
+@inject IHttpContextAccessor httpContextAccessor 
+@{
+
+    var btnText = (httpContextAccessor.HttpContext.Session.GetInt32("IsEdit") == 1) ? "Update" : "Create";
+}
 
 <form asp-action="Submit" asp-controller="Home">
     @Html.HiddenFor(x => x.Id)
@@ -32,5 +38,6 @@
             @Html.TextBoxFor(x => x.Age, new { @class = "form-control" })
         </div>
     </div>
-    <button type="submit" class="btn btn-primary">Create</button>
+    <button type="submit" class="btn btn-primary"> @btnText</button>
+    <a asp-action="List" asp-controller="Home" class="btn btn-primary">Back</a>
 </form>

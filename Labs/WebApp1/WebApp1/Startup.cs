@@ -24,6 +24,7 @@ namespace WebApp1
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
+            services.AddHttpContextAccessor();
             services.AddSession();
         }
 
