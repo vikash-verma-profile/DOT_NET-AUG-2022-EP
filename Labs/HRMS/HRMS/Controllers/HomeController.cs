@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using HRMS.ViewModel;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
@@ -12,6 +13,16 @@ namespace HRMS.Controllers
     {
         public IActionResult Index()
         {
+            return View();
+        }
+
+        public IActionResult Login(Login login)
+        {
+
+            if (ModelState.IsValid)
+            {
+                //
+            }
             return View();
         }
     }
