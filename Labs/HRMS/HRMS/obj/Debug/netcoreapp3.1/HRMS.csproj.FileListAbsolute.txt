@@ -379,6 +379,5 @@ C:\Users\LEVEL UP SOLUTIONS 1\Desktop\Dot-Net-Trainings\Labs\HRMS\HRMS\bin\Debug
 C:\Users\LEVEL UP SOLUTIONS 1\Desktop\Dot-Net-Trainings\Labs\HRMS\HRMS\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
 C:\Users\LEVEL UP SOLUTIONS 1\Desktop\Dot-Net-Trainings\Labs\HRMS\HRMS\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\LEVEL UP SOLUTIONS 1\Desktop\Dot-Net-Trainings\Labs\HRMS\HRMS\obj\Debug\netcoreapp3.1\Razor\Views\Home\Register.cshtml.g.cs
-C:\Users\LEVEL UP SOLUTIONS 1\Desktop\Dot-Net-Trainings\Labs\HRMS\HRMS\obj\Debug\netcoreapp3.1\HRMS.csproj.AssemblyReference.cache
 C:\Users\LEVEL UP SOLUTIONS 1\Desktop\Dot-Net-Trainings\Labs\HRMS\HRMS\obj\Debug\netcoreapp3.1\Razor\Views\Dashboard\Index.cshtml.g.cs
 C:\Users\LEVEL UP SOLUTIONS 1\Desktop\Dot-Net-Trainings\Labs\HRMS\HRMS\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Dashboard.cshtml.g.cs
