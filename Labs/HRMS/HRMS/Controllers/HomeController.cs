@@ -1,6 +1,7 @@
 ﻿using HRMS.Common;
 using HRMS.Models;
 using HRMS.ViewModel;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System;
@@ -24,7 +25,16 @@ namespace HRMS.Controllers
 
             if (ModelState.IsValid)
             {
-                //
+               if(db.TblUsers.Any(x=>x.EmailId==login.UserName && x.Password == login.Password))
+                {
+                    var userData = db.TblUsers.Where(x => x.EmailId == login.UserName && x.Password == login.Password).FirstOrDefault();
+                    HttpContext.Session.SetInt32("UserId", userData.Id);
+                    return RedirectToAction("Index", "Dashboard");
+                }
+                else
+                {
+
+                }
             }
             return View();
         }
@@ -66,6 +76,7 @@ namespace HRMS.Controllers
                 }
                 db.TblUsers.Add(user);
                 db.SaveChanges();
+                HttpContext.Session.SetInt32("UserId", user.Id);
             }
 
             return RedirectToAction("Index", "Dashboard");
