@@ -25,7 +25,13 @@ namespace HRMS.Controllers
             }
             return View();
         }
+        [HttpGet]
         public IActionResult Register()
+        {
+            return View();
+        }
+        [HttpPost]
+        public IActionResult Register(RegisterViewModel register)
         {
             return View();
         }
