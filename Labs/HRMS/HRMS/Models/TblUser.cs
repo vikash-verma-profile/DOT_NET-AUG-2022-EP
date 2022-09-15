@@ -14,5 +14,6 @@ namespace HRMS.Models
         public int? Gender { get; set; }
         public DateTime? Dob { get; set; }
         public string Password { get; set; }
+        public int? RoleId { get; set; }
     }
 }

@@ -17,5 +17,12 @@ namespace HRMS.Controllers
             ViewBag.UserName = userdata.FirstName +" "+ userdata.LastName;
             return View();
         }
+
+        public IActionResult GetMenu()
+        {
+            int UserId = Convert.ToInt32(HttpContext.Session.GetInt32("UserId"));
+            var menu = db.TblMenus.Join(db.TblRoleMenuMappings, m => m.Id, rmm => rmm.MenuId, (m, rmm) => new { m, rmm }).Join(db.TblRoles, rm => rm.rmm.RoleId, r => r.Id, (rmm, r) => new { rmm, r }).Join(db.TblUsers, ur => ur.r.Id, u => u.RoleId, (ur, u) => new { ur, u }).Where(x => x.u.Id == UserId).Select(x=>new {Id= x.ur.rmm.m.Id , MenuText = x.ur.rmm.m.MenuText,Link= x.ur.rmm.m.Link,ParentID= x.ur.rmm.m.ParentId });
+            return Json(menu);
+        }
     }
 }
