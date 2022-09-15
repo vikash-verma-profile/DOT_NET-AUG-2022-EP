@@ -94,7 +94,7 @@
     <!-- ======= Sidebar ======= -->
     <aside id="sidebar" class="sidebar">
 
-        <ul class="sidebar-nav" id="sidebar-nav" >
+        <ul class="sidebar-nav" id="sidebar-nav">
 
             <!-- End Components Nav -->
         </ul>
@@ -143,15 +143,32 @@
                     console.log(data[i]);
                     if (data[i].parentID == 0) {
 
-                        var menuText = `<li class="nav-item">
-                <a class="nav-link " href=`+ data[i].link + `>
-                    <i class="bi bi-grid"></i>
+                        var menuText = `<li class="nav-item " id=menu` + data[i].id + `>
+                <a class="nav-link collapsed" data-bs-target="#collapse` + data[i].id + `" data-bs-toggle="collapse" href="#">
                     <span>`+ data[i].menuText + `</span>
-                </a>
+               <i class="bi bi-chevron-down ms-auto"></i> </a>
             </li>`;
-                        console.log(menuText);
                         $('#sidebar-nav').append(menuText);
                     }
+                }
+                var parentIds = data.filter(x => x.parentID == 0);
+                for (var i = 0; i < parentIds.length; i++) {
+                    
+                    var childIds = data.filter(x => x.parentID == parentIds[i].id);
+                    var submenu = '';
+                    if (childIds.length > 0) {
+                        var submenu = `<ul id="collapse` + parentIds[i].id+`" class="nav-content collapse " data-bs-parent="#sidebar-nav">`;
+                        for (var i = 0; i < childIds.length; i++) {
+                            submenu = submenu + ` <li>
+                        <a href="`+ childIds[i].link + `">
+                            <i class="bi bi-circle"></i><span>`+ childIds[i].menuText + `</span>
+                        </a>
+                    </li>`;
+                        }
+                        submenu = submenu + `</ul>`;
+                        $('#menu' + parentIds[i].id).append(submenu);
+                    }
+
                 }
             },
             error: function (ex) {

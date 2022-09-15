@@ -382,3 +382,5 @@ C:\Users\LEVEL UP SOLUTIONS 1\Desktop\Dot-Net-Trainings\Labs\HRMS\HRMS\obj\Debug
 C:\Users\LEVEL UP SOLUTIONS 1\Desktop\Dot-Net-Trainings\Labs\HRMS\HRMS\obj\Debug\netcoreapp3.1\Razor\Views\Dashboard\Index.cshtml.g.cs
 C:\Users\LEVEL UP SOLUTIONS 1\Desktop\Dot-Net-Trainings\Labs\HRMS\HRMS\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Dashboard.cshtml.g.cs
 C:\Users\LEVEL UP SOLUTIONS 1\Desktop\Dot-Net-Trainings\Labs\HRMS\HRMS\obj\Debug\netcoreapp3.1\HRMS.csproj.AssemblyReference.cache
+C:\Users\LEVEL UP SOLUTIONS 1\Desktop\Dot-Net-Trainings\Labs\HRMS\HRMS\obj\Debug\netcoreapp3.1\Razor\Views\Attendance\AttendanceList.cshtml.g.cs
+C:\Users\LEVEL UP SOLUTIONS 1\Desktop\Dot-Net-Trainings\Labs\HRMS\HRMS\obj\Debug\netcoreapp3.1\Razor\Views\Attendance\Index.cshtml.g.cs
