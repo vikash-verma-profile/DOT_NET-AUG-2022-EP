@@ -38,9 +38,10 @@ namespace HRMSAPI.Controllers
         [HttpDelete]
         public IActionResult Delete(int id)
         {
-           // db.TblUsers.Update(user);
+            var user = db.TblUsers.Where(x => x.Id == id).FirstOrDefault();
+            db.TblUsers.Remove(user);
             db.SaveChanges();
-            return Ok(new { Status = "record updated succesfully" });
+            return Ok(new { Status = "record deleted succesfully" });
         }
     }
 }
