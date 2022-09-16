@@ -26,5 +26,13 @@ namespace HRMSAPI.Controllers
             db.SaveChanges();
             return Ok(new { Status="record added succesfully"});
         }
+
+        [HttpPut]
+        public IActionResult Put(TblUser user)
+        {
+            db.TblUsers.Update(user);
+            db.SaveChanges();
+            return Ok(new { Status = "record updated succesfully" });
+        }
     }
 }
