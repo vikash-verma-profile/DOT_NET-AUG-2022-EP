@@ -13,9 +13,18 @@ namespace HRMSAPI.Controllers
     public class HomeController : ControllerBase
     {
         HRMSDBContext db = new HRMSDBContext();
+
+        [HttpGet]
         public IEnumerable<TblUser> Get()
         {
             return db.TblUsers;
+        }
+        [HttpPost]
+        public IActionResult Post(TblUser user)
+        {
+            db.TblUsers.Add(user);
+            db.SaveChanges();
+            return Ok(new { Status="record added succesfully"});
         }
     }
 }
