@@ -39,7 +39,7 @@ namespace HRMSAPI
             app.UseSwagger();
             app.UseSwaggerUI();
             app.UseHttpsRedirection();
-
+            app.UseCors(x => x.AllowAnyMethod().AllowAnyOrigin().AllowAnyHeader());
             app.UseRouting();
 
             app.UseAuthorization();

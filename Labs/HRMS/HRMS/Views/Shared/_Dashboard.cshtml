@@ -136,7 +136,7 @@
     $(document).ready(function () {
         $.ajax({
             type: 'Get',
-            url: '/Dashboard/GetMenu',
+            url: 'https://localhost:44381/api/Menu?id=3',
             dataType: 'json',
             success: function (data) {
                 for (var i = 0; i < data.length; i++) {

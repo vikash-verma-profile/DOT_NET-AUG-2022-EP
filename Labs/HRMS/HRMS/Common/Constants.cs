@@ -9,5 +9,6 @@ namespace HRMS.Common
     {
         public static string BaseUrl = "https://localhost:44381/api/";
         public static string loginendpoint = "Login";
+        //public static string getmenuendpoint = "api/Menu?id=";
     }
 }
