@@ -34,5 +34,13 @@ namespace HRMSAPI.Controllers
             db.SaveChanges();
             return Ok(new { Status = "record updated succesfully" });
         }
+
+        [HttpDelete]
+        public IActionResult Delete(int id)
+        {
+           // db.TblUsers.Update(user);
+            db.SaveChanges();
+            return Ok(new { Status = "record updated succesfully" });
+        }
     }
 }
