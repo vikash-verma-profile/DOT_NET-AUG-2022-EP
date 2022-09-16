@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32630.194
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HRMSAPI", "HRMSAPI\HRMSAPI.csproj", "{DBAE2128-464A-490E-A6D0-CA0F843E9DFF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DBAE2128-464A-490E-A6D0-CA0F843E9DFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DBAE2128-464A-490E-A6D0-CA0F843E9DFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DBAE2128-464A-490E-A6D0-CA0F843E9DFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DBAE2128-464A-490E-A6D0-CA0F843E9DFF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {09B138E8-BA90-4F7A-ACD8-4759304E4782}
+	EndGlobalSection
+EndGlobal
